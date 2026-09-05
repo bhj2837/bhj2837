@@ -1,57 +1,47 @@
-<div align="center">
+### 이헌준
 
-# 이헌준 · Heonjun Lee
+고려대학교 컴퓨터학과. 궁금한 건 일단 끝까지 만들어보는 편입니다.
 
-**고려대학교 컴퓨터학과**
+[블로그](https://bhj2837.github.io) · [자세한 소개](https://bhj2837.github.io/about/) · [rex2837@korea.ac.kr](mailto:rex2837@korea.ac.kr)
 
-만들어보고 싶은 건 일단 만들어보는 편입니다.
-웹 서비스, 시스템 프로그래밍, 게임 서버까지 넓게 파고 있습니다.
+<br>
 
-[![Blog](https://img.shields.io/badge/Blog-bhj2837.github.io-black?style=flat-square&logo=github)](https://bhj2837.github.io)
-[![Email](https://img.shields.io/badge/rex2837@korea.ac.kr-EA4335?style=flat-square&logo=gmail&logoColor=white)](mailto:rex2837@korea.ac.kr)
+```
+Language   Java · Python · C/C++ · JavaScript
+Frontend   Next.js 14 · Vue 3 · TailwindCSS
+Backend    Django 5 / DRF · Crow (C++) · Paper API
+ML/NLP     PyTorch · HuggingFace Transformers
+Infra      GCP · Vercel · Railway
+```
 
-</div>
+<br>
 
----
+### Projects
 
-### 🛠 Tech Stack
+**[LearningPath](https://github.com/bhj2837/learningpath)** — AI 학습 로드맵 생성 플랫폼
+`Next.js 14` `Django 5` `Claude API`
+남의 리소스 ID 로 접근하면 존재 여부조차 흘리지 않도록 404 를 반환합니다.
+IDOR·인증·입력 검증 회귀 테스트 34개.
 
-![Java](https://img.shields.io/badge/Java-007396?style=flat-square&logo=openjdk&logoColor=white)
-![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white)
-![C++](https://img.shields.io/badge/C++-00599C?style=flat-square&logo=cplusplus&logoColor=white)
-![C](https://img.shields.io/badge/C-A8B9CC?style=flat-square&logo=c&logoColor=black)
-![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=flat-square&logo=javascript&logoColor=black)
+**[SharedFate](https://github.com/bhj2837/sharedfate)** — 운명 공유 마인크래프트 플러그인
+`Java 21` `Paper API` `GCP`
+데미지·인벤토리·죽음을 공유합니다. 다만 전부 공유하면 아무도 자기 장비를 못 챙겨서,
+인벤토리는 슬롯 9–35 만 공유하고 핫바·갑옷은 개인 소유로 남겼습니다.
 
-![Next.js](https://img.shields.io/badge/Next.js-000000?style=flat-square&logo=nextdotjs&logoColor=white)
-![Vue](https://img.shields.io/badge/Vue_3-4FC08D?style=flat-square&logo=vuedotjs&logoColor=white)
-![Django](https://img.shields.io/badge/Django-092E20?style=flat-square&logo=django&logoColor=white)
-![PyTorch](https://img.shields.io/badge/PyTorch-EE4C2C?style=flat-square&logo=pytorch&logoColor=white)
-![GCP](https://img.shields.io/badge/GCP-4285F4?style=flat-square&logo=googlecloud&logoColor=white)
+**[schedule-engine](https://github.com/bhj2837/schedule-engine)** — C++ 일정 최적화 서버
+`C++17` `Crow`
+`score = deadline - priority × 3600` — 우선순위 한 단계를 마감 한 시간으로 환산해
+EDF 에 섞었습니다. API 와 대시보드를 exe 하나에서 서빙합니다.
 
----
+**[mini-shell](https://github.com/bhj2837/mini-shell)** — C 로 만든 UNIX 셸
+`C` `POSIX`
+파이프·리다이렉션·백그라운드 실행·시그널 처리를 직접 구현. `Ctrl+C` 는 셸이 아니라
+포그라운드 작업만 죽입니다.
 
-### 📌 Projects
+**[korean-dialogue-generation](https://github.com/bhj2837/korean-dialogue-generation)** — 한국어 멀티턴 대화 생성
+`PyTorch` `KoBART`
+`<P01>` / `<P02>` 화자 토큰을 추가해 멀티턴 맥락에서 발화 주체를 구분하도록 했습니다.
 
-| 프로젝트 | 설명 | 스택 |
-|---|---|---|
-| **[LearningPath](https://github.com/bhj2837/learningpath)** | 목표·기간만 입력하면 Claude API 가 주차별 학습 로드맵을 생성하는 플랫폼 | `Next.js 14` `Django 5` `Claude API` |
-| **[SharedFate](https://github.com/bhj2837/sharedfate)** | 데미지·인벤토리·죽음을 공유하는 협동 마인크래프트 플러그인. GCP 에 직접 서버 운영 | `Java 21` `Paper API` `Gradle` |
-| **[schedule-engine](https://github.com/bhj2837/schedule-engine)** | EDF + 우선순위 가중치 스케줄러. REST API 와 간트 차트를 단일 실행 파일로 서빙 | `C++17` `Crow` |
-| **[mini-shell](https://github.com/bhj2837/mini-shell)** | 파이프·리다이렉션·시그널·내장 명령어를 직접 구현한 UNIX 셸 | `C` `POSIX` |
-| **[korean-dialogue-generation](https://github.com/bhj2837/korean-dialogue-generation)** | 화자 토큰을 추가해 파인튜닝한 KoBART 한국어 멀티턴 대화 생성 모델 | `PyTorch` `HuggingFace` |
-| **[daily-brief](https://daily-brief-neon-three.vercel.app)** | 날씨·일정·뉴스를 모은 Vue 3 개인 대시보드 | `Vue 3` `Vercel` |
-
----
-
-### ✍️ Blog
-
-[**bhj2837.github.io**](https://bhj2837.github.io) — 알고리즘 문제를 풀고 나서
-*왜 그 풀이가 되는지*를 정리해 둡니다.
-
----
-
-<div align="center">
-
-![stats](https://github-readme-stats.vercel.app/api?username=bhj2837&show_icons=true&hide_border=true&count_private=true&theme=default)
-
-</div>
+**[daily-brief](https://daily-brief-neon-three.vercel.app)** — 개인 대시보드
+`Vue 3`
+날씨·일정·뉴스를 한 화면에. 이전 weather 프로젝트를 컴포넌트로 떼어 재사용했습니다.
