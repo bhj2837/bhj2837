@@ -1,8 +1,5 @@
 <div align="center">
 
-# 이헌준 · Heonjun Lee
-
-
 
 풀스택 웹 · C/C++ 시스템 프로그래밍 · 딥러닝
 
